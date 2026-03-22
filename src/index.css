@@ -1,0 +1,33 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; background: #0f0f0f; color: #fff; min-height: 100vh; }
+
+header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 2rem; text-align: center; border-bottom: 2px solid #2a2a4e;}
+header h1 { font-size: 2.5rem; background: linear-gradient(90deg, #00d9ff, #00ff88); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+header p { color: #888; margin-top: 0.5rem; }
+
+.container { max-width: 1400px; margin: 0 auto; padding: 2rem; }
+.sections { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+
+.section { background: #1a1a2e; border-radius: 12px; padding: 1.5rem; border: 1px solid #2a2a4e; display: flex; flex-direction: column;}
+.section h2 { color: #00d9ff; margin-bottom: 1rem; font-size: 1.3rem; display: flex; align-items: center; gap: 0.5rem; }
+.section-number { background: #00ff88; color: #000; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9rem; }
+
+textarea { width: 100%; background: #0f0f0f; border: 1px solid #333; color: #00ff88; padding: 0.8rem; border-radius: 8px; font-family: 'Consolas', monospace; font-size: 0.9rem; min-height: 200px; resize: vertical; outline: none;}
+textarea:focus { border-color: #00d9ff; }
+
+button { background: linear-gradient(90deg, #00d9ff, #00ff88); color: #000; border: none; padding: 0.8rem 1.5rem; border-radius: 8px; cursor: pointer; font-weight: bold; margin-top: 0.5rem; align-self: flex-start;}
+button:hover { opacity: 0.9; }
+
+.result { margin-top: 1rem; padding: 1rem; border-radius: 8px; font-family: 'Consolas', monospace; font-size: 0.9rem;}
+.result.valid { background: #1a3d1a; border: 1px solid #00ff88; color: #fff;}
+.result.invalid { background: #3d1a1a; border: 1px solid #ff4444; color: #fff;}
+
+.status-badge { display: inline-block; padding: 0.3rem 0.8rem; border-radius: 4px; font-weight: bold; margin-right: 10px;}
+.status-valid { background: #00ff88; color: #000; }
+.status-invalid { background: #ff4444; color: #fff; }
+
+pre { background: #0a0a0a; padding: 1rem; border-radius: 8px; overflow-x: auto; font-size: 0.85rem; line-height: 1.5; color: #ccc; flex-grow: 1;}
+
+/* Modifikasi React Flow untuk Dark Mode */
+.react-flow__node { color: #000; font-family: 'Consolas', monospace; }
+.react-flow__controls button { background-color: #1a1a2e; fill: #fff; border-bottom: 1px solid #333;}

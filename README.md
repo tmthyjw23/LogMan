@@ -1,17 +1,27 @@
-# React + Vite
+# 🤖 Compiler Illustrator (LogMan Edition)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Compiler Illustrator adalah sebuah alat bantu pembelajaran (berbasis web) yang dirancang untuk memvisualisasikan cara kerja *Context-Free Grammar* (CFG) dan *Top-Down Parsing*. Proyek ini menerjemahkan kode sumber menjadi *Abstract Syntax Tree* (AST) secara *real-time* menggunakan antarmuka interaktif.
 
-Currently, two official plugins are available:
+Edisi **LogMan** (Logat Manado) menggunakan dialek lokal bahasa Manado sebagai *keyword* bahasa pemrogramannya, membuatnya lebih unik dan menyenangkan untuk dipelajari.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Fitur Utama
+- **Live Parsing:** Mengetik kode dan langsung melihat hasil *Parse Tree* detik itu juga.
+- **Custom Lexer & Parser:** Dibangun dari nol menggunakan algoritma *Recursive Descent Parser*.
+- **Smart Error Handling:** Menunjukkan lokasi error yang presisi (Baris dan Kolom) jika ada kesalahan *syntax*.
+- **Math Precedence:** Mendukung hierarki operasi matematika (Piramida *Expression* -> *Term* -> *Factor*) sehingga `5 + 3 * 2` di-parse dengan urutan yang benar secara teori Automata.
+- **Interactive Visualizer:** Visualisasi pohon sintaksis menggunakan *React Flow* dengan tema *Dark Mode* modern.
 
-## React Compiler
+## 🛠️ Tech Stack
+- **Frontend:** React.js (Vite)
+- **State Management:** Zustand
+- **Visualization:** React Flow
+- **Styling:** Vanilla CSS (Dark/Neon Theme)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Cara Menjalankan Proyek (Local Development)
 
-## Expanding the ESLint configuration
+Pastikan kamu sudah menginstal [Node.js](https://nodejs.org/) di komputermu.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# LogMan
+1. Clone repositori ini atau buka terminal di dalam folder proyek.
+2. Instal semua dependensi:
+   ```bash
+   npm install
