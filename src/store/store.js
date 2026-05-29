@@ -1,6 +1,6 @@
 import { create } from 'zustand';
-import { tokenize } from '../compiler/Lexer';
-import { Parser } from '../compiler/parser';
+import { tokenize } from '../compiler/Lexer.js';
+import { Parser } from '../compiler/Parser.js';
 
 export const useCompilerStore = create((set) => ({
   // State
